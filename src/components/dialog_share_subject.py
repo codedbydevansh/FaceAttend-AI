@@ -4,7 +4,7 @@ import io
 
 @st.dialog("Create New Subject")
 def share_subject_dialog(subject_name , subject_code):
-    app_domain = "faceattendai-main.stramlit.app"
+    app_domain = "faceattend-ai-main.stramlit.app"
     join_url = f"{app_domain}/?join-code={subject_code}"
 
     st.header("Scan to Join")
