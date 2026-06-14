@@ -8,11 +8,11 @@ def style_background_home():
         <style>
 
                 .stApp {
-                    background: #5865F2 !important;
+                    background: #494D5F !important;
                 }
 
                 .stApp div[data-testid="stColumn"]{
-                    background-color:#E0E3FF !important;
+                    background-color: #d0bdf4 !important;
                     padding:2.5rem !important;
                     border-radius: 5rem !important;
                     }
@@ -28,7 +28,7 @@ def style_background_dashboard():
         <style>
 
                 .stApp {
-                    background: #E0E3FF !important;
+                    background-color:  #494D5F !important;
                 }
 
         </style>  
@@ -60,7 +60,6 @@ def style_base_layout():
             h1 {
                 font-family: 'Climate Crisis', sans-serif !important;
                 font-size: 3.5rem !important;
-                line-height:1.1 1important;
                 margin-bottom:0rem !important;
             }
                 
@@ -75,11 +74,6 @@ def style_base_layout():
             h3, h4, p {
                 font-family: 'Outfit', sans-serif;    
             }
-                
-            span {
-                color:black !important;
-                }
-                
 
             button{
                 border-radius: 1.5rem !important;
@@ -101,7 +95,7 @@ def style_base_layout():
 
             button[kind="tertiary"]{
                 border-radius: 1.5rem !important;
-                background-color: black !important;
+                #background-color: black !important;
                 color: white !important;
                 padding: 10px 20px !important;
                 border: none !important;
