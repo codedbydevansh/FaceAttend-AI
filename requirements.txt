@@ -7,10 +7,8 @@ pandas
 # Face Reconization
 scikit-learn
 dlib-bin
-face-recognition
-face-recognition-models
 git+https://github.com/ageitgey/face_recognition_models
-setuptools>=75.0.0
+setuptools>70.0.0
 
 # Database
 supabase
