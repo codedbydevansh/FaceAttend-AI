@@ -123,15 +123,11 @@ def student_screen():
     if "photo_source" not in st.session_state:
         st.session_state.photo_source = None
 
-    if "scan_done" not in st.session_state:
-        st.session_state.scan_done = False
-
     photo_source = st.camera_input("Position your face in the center")
     
-    if photo_source and not st.session_state.scan_done:
+    if photo_source:
 
         st.session_state.photo_source = photo_source
-        st.session_state.scan_done = True
 
         img = np.array(Image.open(st.session_state.photo_source))
 
@@ -142,7 +138,7 @@ def student_screen():
                 st.warning('Face not Found!')
 
                 st.session_state.show_registration = True
-                
+
             elif num_faces >1:
                 st.warning('Multiple faces found')
             else:
