@@ -9,7 +9,7 @@ def main():
 
     st.set_page_config(
         page_title='FaceTrack AI - Making Attendance faster using AI',
-        page_icon="https://thumbs.dreamstime.com/z/digital-human-face-rendered-network-connected-blue-dots-dark-background-452962244.jpg?ct=jpeg"
+        page_icon="/src/ui/app_logo.png"
     )
     
     if 'login_type' not in st.session_state:
