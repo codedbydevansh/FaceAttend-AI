@@ -116,8 +116,8 @@ def student_screen():
     st.space()
     st.space()
 
-    if "show_registration" not in st.session_state:
-        st.session_state.show_registration = False
+    
+    show_registration = False
     photo_source = st.camera_input("Position your face in the center")
     
     if photo_source:
@@ -148,10 +148,10 @@ def student_screen():
 
                 else:
                     st.info('Face not recongized! You might be a new student')
-                    st.session_state.show_registration = True
+                    show_registration = True
 
                     
-    if st.session_state.show_registration:
+    if show_registration:
         with st.container(border=True):
             st.header('Register new Profile')
             new_name = st.text_input("Enter your name", placeholder='E.g. devansh')
