@@ -127,10 +127,11 @@ def student_screen():
             detected , all_ids , num_faces = predict_attendance(img)
 
             if num_faces == 0:
-                st.warning('Face not Found')
+                st.warning('Face not Found!')
             elif num_faces >1:
                 st.warning('Multiple faces found')
-            elif detected:
+            else:
+                if detected:
                     student_id = list(detected.keys())[0]
                     all_students =cast(list[dict[str, Any]], get_all_students())
 
@@ -145,9 +146,9 @@ def student_screen():
                         time.sleep(1)
                         st.rerun()
 
-            else:
-                st.info('Face not recongized! You might be a new student')
-                show_registration = True
+                else:
+                    st.info('Face not recongized! You might be a new student')
+                    show_registration = True
 
                     
     if show_registration:
