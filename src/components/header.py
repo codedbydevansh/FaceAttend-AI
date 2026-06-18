@@ -16,7 +16,7 @@ def header_home():
 
 def header_dashboard():
 
-    logo_url = "https://i.ibb.co/YTYGn5qV/logo.png"
+    logo_url = "https://chatgpt.com/backend-api/estuary/content?id=file_000000009e8471fb82074a2e856a3220&ts=494944&p=fs&cid=1&sig=750ac3fe2904f8439d97f12ceff6ce4790a12d34877006448d0d793ba0b91de0&v=0"
     
     st.markdown(f"""
         <div style="display:flex; align-items:center; justify-content:center; gap:10px">
