@@ -128,7 +128,7 @@ def student_screen():
 
             if num_faces == 0:
                 st.warning('Face not Found')
-            elif num_faces > 1:
+            elif num_faces >1:
                 st.warning('Multiple faces found')
             else:
                 if detected:
