@@ -10,7 +10,7 @@ def main():
 
     st.set_page_config(
         page_title='FaceTrack AI - Making Attendance faster using AI',
-        page_icon=Image.open("src/ui/app_logo.png")
+        page_icon="https://res.cloudinary.com/dc0shr2oh/image/upload/v1781803864/app_logo_uelibi.png"
     )
     
     if 'login_type' not in st.session_state:
