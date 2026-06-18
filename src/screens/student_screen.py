@@ -118,9 +118,17 @@ def student_screen():
 
     
     show_registration = False
+
+    if "photo_source" not in st.session_state:
+        st.session_state.photo_source = None
+    
     photo_source = st.camera_input("Position your face in the center")
     
     if photo_source:
+
+        st.session_state.photo_source = photo_source
+        st.session_state.scan_done = True
+
         img = np.array(Image.open(photo_source))
 
         with st.spinner('AI is scanning....'):
@@ -131,7 +139,7 @@ def student_screen():
 
                 show_registration = True
                 
-            elif num_faces >1:
+            elif num_faces > 1:
                 st.warning('Multiple faces found')
             else:
                 if detected:
@@ -148,10 +156,6 @@ def student_screen():
                         st.toast(f"Welcome Back {student['name']}")
                         time.sleep(1)
                         st.rerun()
-
-                else:
-                    st.info('Face not recongized! You might be a new student')
-                    show_registration = True
 
                     
     if show_registration:
