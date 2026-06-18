@@ -3,13 +3,14 @@ from src.screens.home_screen import home_screen
 from src.screens.teacher_screen import teacher_screen
 from src.screens.student_screen import student_screen
 from src.components.dialog_auto_enroll import auto_enroll_dialog
+from PIL import Image
 
 
 def main():
 
     st.set_page_config(
         page_title='FaceTrack AI - Making Attendance faster using AI',
-        page_icon="/src/ui/app_logo.png"
+        page_icon=Image.open("/src/ui/app_logo.png")
     )
     
     if 'login_type' not in st.session_state:
