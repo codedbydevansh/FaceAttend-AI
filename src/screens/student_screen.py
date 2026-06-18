@@ -117,11 +117,17 @@ def student_screen():
     st.space()
 
     
-    show_registration = False
+    if "show_registration" not in st.session_state:
+        st.session_state.show_registration = False
+
+    if "photo_source" not in st.session_state:
+        st.session_state.photo_source = None
+
     photo_source = st.camera_input("Position your face in the center")
     
     if photo_source:
-        img = np.array(Image.open(photo_source))
+        st.session_state.photo_source = photo_source
+        img = np.array(Image.open(st.session_state.photo_source))
 
         with st.spinner('AI is scanning....'):
             detected , all_ids , num_faces = predict_attendance(img)
@@ -148,10 +154,10 @@ def student_screen():
 
                 else:
                     st.info('Face not recongized! You might be a new student')
-                    show_registration = True
+                    st.session_state.show_registration = True
 
                     
-    if show_registration:
+    if st.session_state.show_registration:
         with st.container(border=True):
             st.header('Register new Profile')
             new_name = st.text_input("Enter your name", placeholder='E.g. devansh')
