@@ -4,7 +4,7 @@ from PIL import Image
 
 def header_home():
 
-    logo_url = "https://thumbs.dreamstime.com/z/digital-human-face-rendered-network-connected-blue-dots-dark-background-452962244.jpg?ct=jpeg"
+    logo_url = "https://res.cloudinary.com/dc0shr2oh/image/upload/v1781803864/app_logo_uelibi.png"
     
     st.markdown(f"""
         <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:30px; margin-top:30px">
@@ -17,7 +17,7 @@ def header_home():
 
 def header_dashboard():
 
-    logo_url ="https://thumbs.dreamstime.com/z/digital-human-face-rendered-network-connected-blue-dots-dark-background-452962244.jpg?ct=jpeg"
+    logo_url ="https://res.cloudinary.com/dc0shr2oh/image/upload/v1781803864/app_logo_uelibi.png"
     st.markdown(f"""
         <div style="display:flex; align-items:center; justify-content:center; gap:10px">
             <img src='{logo_url}' style='height:85px;' />
