@@ -6,12 +6,19 @@
 
 ---
 
+## 🌐 Live Demo
+
+Experience FaceAttend AI in action through the live web application.
+
+### 🚀 Project Website
+🔗 **Live Demo:** [face-attend-ai-landing-page.vercel.app](https://face-attend-ai-landing-page.vercel.app/)
+
 ## 📑 Table of Contents
 
 - [Description](#-description)
 - [Key Features](#-key-features)
 - [Use Cases](#-use-cases)
-- [Tech Stack & Key Dependencies](#-tech-stack--key-dependencies)
+- [Tech Stack & Architecture](#-tech-stack--architecture)
 - [Getting Started](#-getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -26,7 +33,7 @@
 
 ## 📝 Description
 
-FaceAttend-AI is an automated attendance management platform designed to replace manual roll calls with facial recognition. Utilizing Python, the application allows users to create and manage groups, register participants, and automate attendance logging through image capture or uploads. The system aims to streamline the tracking process to make recording attendance faster and less prone to manual errors.
+FaceAttend-AI is an automated attendance management platform designed to replace manual roll calls with automated facial recognition. Utilizing Python, the application allows users to create and manage groups, register participants, and automate attendance logging through image capture or uploads. The system aims to streamline the tracking process to make recording attendance faster and less prone to manual errors.
 
 ## ✨ Key Features
 
@@ -40,71 +47,25 @@ FaceAttend-AI is an automated attendance management platform designed to replace
 * **Teachers** looking to automate student tracking through an interactive web-based interface.
 * **Developers** seeking to deploy a local, Python-based facial attendance registration system using Streamlit.
 
-## 🛠️ Tech Stack & Key Dependencies
+## 🛠️ Tech Stack & Architecture
 
-### 🤖 Artificial Intelligence & Machine Learning
-- Face Recognition
-- Voice Recognition
-- Speaker Verification
-- Machine Learning
-- Computer Vision
-
-### 🐍 Programming Language
-- Python
-
-### 👁️ Computer Vision
-- OpenCV
-- Face Recognition Library
-- Dlib
-
-### 🎙️ Speech & Audio Processing
-- Resemblyzer
-- Librosa
-
-### 📊 Data Science & Machine Learning
-- NumPy
-- Pandas
-- Scikit-Learn
-
-### 🖼️ Image Processing
-- Pillow (PIL)
-
-### 🗄️ Database & Security
-- Supabase
-- Bcrypt
-
-### 📱 QR Code Generation
-- Segno
-
-### 🌐 Web Application Framework
-- Streamlit
-
-### 🔧 Development Tools
-- Git
-- GitHub
-- Visual Studio Code
-
----
-
-## 📦 Core Dependencies
+### Core Dependencies
 
 | Category | Technologies |
-|-----------|--------------|
-| Programming Language | Python |
-| Frontend | Streamlit |
-| Computer Vision | OpenCV, Dlib, Face Recognition |
-| Speech Recognition | Resemblyzer, Librosa |
-| Machine Learning | Scikit-Learn |
-| Data Processing | NumPy, Pandas |
-| Database | Supabase |
-| Security | Bcrypt |
-| Image Processing | Pillow |
-| QR Generation | Segno |
-| Version Control | Git, GitHub |
+| :--- | :--- |
+| **Programming Language** | Python |
+| **Frontend** | Streamlit |
+| **Computer Vision** | OpenCV, Dlib, Face Recognition |
+| **Speech Recognition** | Resemblyzer, Librosa |
+| **Machine Learning** | Scikit-Learn |
+| **Data Processing** | NumPy, Pandas |
+| **Database** | Supabase |
+| **Security** | Bcrypt |
+| **Image Processing** | Pillow |
+| **QR Generation** | Segno |
+| **Version Control** | Git, GitHub |
 
----
-
-## 🏗️ Architecture Overview
+### Architecture Overview
 
 ```text
 FaceAttend AI
@@ -133,7 +94,8 @@ FaceAttend AI
     └── Pillow (Image Processing)
 ```
 
-### Key Dependencies
+### Key Package Versions
+
 ```text
 streamlit: latest
 numpy: latest
@@ -150,9 +112,12 @@ librosa: latest
 resemblyzer: latest
 ```
 
+---
+
 ## ⚡ Getting Started
 
 ### Prerequisites
+
 - Python 3.10 or higher installed on your system.
 
 ### Installation
@@ -182,8 +147,11 @@ Follow these steps to set up the project locally:
    ```
 
 ### Configuration
+
 <!-- TODO: Add specific environment variables or local configs here if required by src/database/config.py -->
 Before running the application, ensure you have set up your database configurations (such as Supabase credentials) as required by `src/database/config.py`.
+
+---
 
 ## 💻 Usage
 
@@ -196,6 +164,8 @@ python app.py
 Once the server starts, navigate to the local URL provided in your terminal (usually `http://localhost:8501`) to access the web application.
 
 <!-- TODO: Add a brief overview of how to register/login or take attendance once the app is open -->
+
+---
 
 ## 📁 Project Structure
 
@@ -229,6 +199,8 @@ Once the server starts, navigate to the local URL provided in your terminal (usu
         └── base_layout.py
 ```
 
+---
+
 ## 👥 Contributors
 
 Thanks to everyone who has contributed to this project:
@@ -261,3 +233,4 @@ Contributions are welcome! Here is the standard workflow to contribute to FaceAt
    git push origin feature/your-feature
    ```
 6. Open a **Pull Request** on GitHub.
+
