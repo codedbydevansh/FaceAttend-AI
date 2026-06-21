@@ -261,7 +261,3 @@ Contributions are welcome! Here is the standard workflow to contribute to FaceAt
    git push origin feature/your-feature
    ```
 6. Open a **Pull Request** on GitHub.
-
-## 📄 License
-<!-- TODO: Add project license details here (e.g. MIT, Apache 2.0) -->
-This project's licensing details are currently pending. Please refer to the repository owner for more information.
